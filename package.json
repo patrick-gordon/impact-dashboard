@@ -1,0 +1,23 @@
+{
+  "name": "impact-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connect-our-kids/impact-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connect-our-kids/impact-dashboard/issues"
+  },
+  "homepage": "https://github.com/connect-our-kids/impact-dashboard#readme",
+  "dependencies": {
+    "mixpanel": "^0.10.3"
+  }
+}

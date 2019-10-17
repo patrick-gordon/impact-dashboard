@@ -60,6 +60,23 @@ provider:
 functions:
   hello:
     handler: handler.hello
+
+# sendEvent and sendUserInfo are for sending Impact Dashboard event information to MixPanel
+  sendEvent:
+    handler: lambda/analytics.sendEvent
+    events:
+      - http:
+          path: api/sendEvent
+          method: POST
+          cors: true
+  sendUserInfo:
+    handler: lambda/analytics.sendUserInfo
+    events:
+      - http:
+          path: api/sendUserInfo
+          method: POST
+          cors: true
+          
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
