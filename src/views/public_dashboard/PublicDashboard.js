@@ -7,7 +7,7 @@ const PublicDashboard = (props) => {
 
   const [words, setWords] = useState()
 
-
+  // Fetches data from deployed backend endpoint, which is serving up some shakespeare words and word counts
   useEffect(()=>{
     fetch('https://wp4hb8gbwh.execute-api.us-east-1.amazonaws.com/dev-ehalsmert/shakespeareQuotes')
       .then(response => response.json())

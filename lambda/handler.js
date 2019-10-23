@@ -37,7 +37,8 @@ module.exports.shakespeareQuotes = async event=> {
   const query = await shakespeare.queryShakespeare();
       return {
         statusCode: 200,
-        // This header is needed for CORS from localhost. Possibly not necessary once deployed with frontend and backend on the same domain, impact.connectourkids.org
+        // This header is needed for CORS. Possibly not necessary once deployed with frontend and backend on the same domain, impact.connectourkids.org
+        // Note, I tried "Access-Control-Allow-Origin": "http://localhost:3000" but got the CORS error again, so I've reverted to *
         headers: {
           "Access-Control-Allow-Origin": "*"
         },
