@@ -1,8 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import './PublicDashboard.scss';
 import { increment, decrement } from '../../redux/actions/index';
 import {connect} from 'react-redux';
+
+const Button = styled.button`
+width: 8rem;
+margin-top: 20px;
+height: 35px;
+border-radius: 4px;
+background-color: #158fb4;
+color: white;
+`
 
 const PublicDashboard = (props) => {
 
@@ -42,6 +52,10 @@ const PublicDashboard = (props) => {
         </div>
       </main>
     </>
+
+    <Button>
+      Donate
+    </Button>
 
     
         <div>
